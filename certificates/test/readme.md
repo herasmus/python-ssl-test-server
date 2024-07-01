@@ -73,4 +73,6 @@
 
 
 #### Sign the client CSR with the CA certificate:
+	openssl x509 -req -in client.csr -CA ca.pem -CAkey ca.key -CAcreateserial -out client.pem -days 365
+
 
