@@ -9,7 +9,7 @@ SERVER_CERT = 'server.pem'
 
 def create_ssl_context():
     context = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)
-    context.load_cert_chain(certfile=CLIENT_CERT, keyfile=CLIENT_KEY)
+    #context.load_cert_chain(certfile=CLIENT_CERT, keyfile=CLIENT_KEY)
     #context.load_verify_locations(cafile=SERVER_CERT)    
     #context.load_verify_locations(cafile=CA_CERT)
     context.load_verify_locations(cafile=SERVER_CERT)
